@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Ethereum Address" />
+
+
+
+
+    <Button
+        android:id="@+id/btnFetchBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Fetch Balance" />
+
+    <Button
+        android:id="@+id/btnFetchNonce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Fetch Nonce" />
+
+
+    <Button
+        android:id="@+id/btnScanQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Scan QR Code" />
+
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance" />
+
+
+    <TextView
+        android:id="@+id/tvNonce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nonce" />
+
+    <EditText
+        android:id="@+id/etTransactionHash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Transaction Hash"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnFetchTransactionDetails"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Transaction Details" />
+
+    <TextView
+        android:id="@+id/tvTransactionDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction Details" />
+
+    <EditText
+        android:id="@+id/etTokenAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Token Contract Address"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etTokenAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Token Amount"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnSendToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send Token" />
+
+
+</LinearLayout>
